@@ -1,0 +1,17 @@
+.root {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "photo info";
+    gap: 8px;
+    padding: 16px;
+    width: 100%;
+}
+
+.photo {
+    border-radius: 16px;
+    grid-area: photo;
+}
+
+.info {
+    grid-area: info;
+}

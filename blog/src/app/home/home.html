@@ -1,0 +1,9 @@
+<section class="root">
+    <app-about class="about"/>
+    <app-tabs [tabsData]="tabs" [selectedId]="selectedTabId" (selectTab)="onTabChanged($event)"/>
+    @if(selectedTabId === TabId.Articles) {
+        <app-articles />
+    } @else {
+        <app-projects />
+    }
+</section>

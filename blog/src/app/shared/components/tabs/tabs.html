@@ -1,0 +1,5 @@
+<div class="root">
+    @for (tab of tabsData(); track $index) {
+        <button [ngClass]="{'tab': true, 'tab_active': tab.id === selectedId()}" (click)="onTabClick(tab)">{{ tab.title }}</button>
+    }
+</div>

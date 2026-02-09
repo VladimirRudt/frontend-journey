@@ -1,0 +1,25 @@
+.root {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.tab {
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.tab_active::before {
+    display: block;
+    height: 2px;
+    left: 0;
+    right: 0;
+    border-radius: 1px;
+    content: "";
+    background: hotpink;
+    position: absolute;
+    bottom: 0;
+}
