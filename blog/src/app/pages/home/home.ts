@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { About } from "../about/about";
-import { TabItem, Tabs } from "../shared/components/tabs/tabs";
-import { Articles } from "../articles/articles";
-import { Projects } from "../projects/projects";
+import { About } from 'src/app/features/about/about';
+import { Articles } from 'src/app/features/articles/articles';
+import { Projects } from 'src/app/features/projects/projects';
+import { Tabs, TabItem } from 'src/app/shared/components/tabs/tabs';
 
 export enum TabId {
   Articles = 'Articles',
@@ -22,12 +22,12 @@ export class Home {
     {
       id: TabId.Articles,
       title: 'Articles',
-      iconSource: '../../assets/articles.png'
+      iconSource: 'src/assets/articles.png'
     },
     {
       id: TabId.Projects,
       title: 'Projects',
-      iconSource: '../../assets/projects.png'
+      iconSource: 'src/assets/projects.png'
     },
   ]
 

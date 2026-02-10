@@ -1,0 +1,13 @@
+.root {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.link {
+    display: block;
+    width: 25%;
+    height: 300px;
+}

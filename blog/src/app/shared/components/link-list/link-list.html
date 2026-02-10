@@ -1,0 +1,11 @@
+<div class="root">
+    @for (item of list(); track $index) {
+        <!-- <a class="link" [routerLink]="['/arcticles', item.id]"> -->
+        <a class="link">
+        <div>
+                <p>{{ item.title }}</p>
+                <p>{{ item.description }}</p>
+            </div>
+        </a>
+    }
+</div>
