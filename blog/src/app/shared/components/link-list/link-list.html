@@ -1,10 +1,7 @@
 <div class="root">
     @for (item of list(); track $index) {
         <a class="link" [routerLink]="['/arcticles', item.id]">
-        <div>
-                <p>{{ item.title }}</p>
-                <p>{{ item.description }}</p>
-            </div>
+            <app-card [title]="item.title" [description]="item.description" />
         </a>
     }
 </div>
