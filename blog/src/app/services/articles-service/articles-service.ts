@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { ArcticleSummary } from './ArcticleSummary';
-import { ArcticleData } from './ArcticleData';
+import { ArticleSummary } from './ArticleSummary';
+import { ArticleData } from './ArticleData';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ArcticlesService {
-  private readonly arcricles: ArcticleData[] = [
+export class ArticlesService {
+  private readonly arcricles: ArticleData[] = [
     {
       id: 1,
       title: "AI-based Summarization",
@@ -39,11 +39,11 @@ export class ArcticlesService {
     },
   ]
 
-  getArcticles(): ArcticleSummary[] {
+  getArticles(): ArticleSummary[] {
     return this.arcricles
   }
 
-  getArcticleById(id: number): ArcticleData | null {
+  getArcticleById(id: number): ArticleData | null {
     return this.arcricles.find(arcticle => arcticle.id == id) ?? null
   }
 }

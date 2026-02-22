@@ -1,7 +1,7 @@
 <div class="root">
     @for (item of list(); track $index) {
         <a class="link" [routerLink]="['/arcticles', item.id]">
-            <app-card [title]="item.title" [description]="item.description" />
+            <app-card [color]="getNextColor()" [title]="item.title" [description]="item.description" />
         </a>
     }
 </div>

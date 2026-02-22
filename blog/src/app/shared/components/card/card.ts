@@ -9,4 +9,5 @@ import { Component, input } from '@angular/core';
 export class Card {
   title = input<string>()
   description = input<string>()
+  color = input<string>()
 }

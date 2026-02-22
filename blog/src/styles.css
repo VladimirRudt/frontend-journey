@@ -10,9 +10,19 @@ body {
   overflow: hidden;
   display: flex;
   flex-flow: column;
+  background-color: var(--background-primary);
 }
 :root {
-  --background-secondary: #eeeeee;
+  --background-primary: #141F26;
+  --background-secondary: #733959;
+
+  --light-text: #F2F2F2;
+
+  --underline: #F2F2F2;
+  --border: #733959;
+
+  --shadow: #733959;
+  --inset-shadow: #f2f2f28f;
 }
 
 .app-root {
@@ -20,12 +30,4 @@ body {
   max-width: 1000px;
   min-width: 800px;
   margin: auto;
-}
-
-button.primary {
-  padding: 10px;
-  border: solid 1px var(--primary-color);
-  background: var(--primary-color);
-  color: white;
-  border-radius: 8px;
 }

@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { ArcticlesService } from 'src/app/services/arcticles-service/arcticles-service';
-import { ArcticleSummary } from 'src/app/services/arcticles-service/ArcticleSummary';
+import { ArticlesService } from 'src/app/services/articles-service/articles-service';
+import { ArticleSummary } from 'src/app/services/articles-service/ArticleSummary';
 import { LinkList } from "src/app/shared/components/link-list/link-list";
 import { LinkListData } from 'src/app/shared/components/link-list/LinkListData';
 
@@ -11,15 +11,15 @@ import { LinkListData } from 'src/app/shared/components/link-list/LinkListData';
   styleUrl: './articles.scss',
 })
 export class Articles {
-  private readonly arcticlesService = inject(ArcticlesService)
+  private readonly articlesService = inject(ArticlesService)
 
-  arcticles = this.toArcticles(this.arcticlesService.getArcticles())
+  articles = this.toArticles(this.articlesService.getArticles())
 
-  private toArcticles(summaries: ArcticleSummary[]): LinkListData<number>[] {
-    return summaries.map(summay => ({
-      id: summay.id,
-      title: summay.title,
-      description: summay.description
+  private toArticles(summaries: ArticleSummary[]): LinkListData<number>[] {
+    return summaries.map(summary => ({
+      id: summary.id,
+      title: summary.title,
+      description: summary.description
     }))
   }
 }

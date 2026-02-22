@@ -2,7 +2,7 @@
     <app-about class="about"/>
     <app-tabs [tabsData]="tabs" [selectedId]="selectedTabId" (selectTab)="onTabChanged($event)"/>
     @if(selectedTabId === TabId.Articles) {
-        <app-articles />
+        <app-articles class="articles" />
     } @else {
         <app-projects />
     }

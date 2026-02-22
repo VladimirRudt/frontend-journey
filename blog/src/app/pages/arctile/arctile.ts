@@ -1,8 +1,8 @@
 import { Component, inject, input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ArcticleData } from 'src/app/services/arcticles-service/ArcticleData';
-import { ArcticlesService } from 'src/app/services/arcticles-service/arcticles-service';
-import { ArcticleSummary } from 'src/app/services/arcticles-service/ArcticleSummary';
+import { ArticleData } from 'src/app/services/articles-service/ArticleData';
+import { ArticlesService } from 'src/app/services/articles-service/articles-service';
+import { ArticleSummary } from 'src/app/services/articles-service/ArticleSummary';
 
 @Component({
   selector: 'app-arctile',
@@ -12,9 +12,9 @@ import { ArcticleSummary } from 'src/app/services/arcticles-service/ArcticleSumm
 })
 export class Arctile {
   private readonly route = inject(ActivatedRoute)
-  private readonly arcticlesService = inject(ArcticlesService) 
+  private readonly arcticlesService = inject(ArticlesService)
 
-  arcticle: ArcticleData | null = null
+  arcticle: ArticleData | null = null
 
   constructor() {
     this.route.params.subscribe((params) =>{

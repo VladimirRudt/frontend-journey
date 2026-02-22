@@ -4,6 +4,8 @@
 }
 
 .tab {
+    font-size: 22px;
+    color: var(--light-text);
     position: relative;
     background: transparent;
     outline: none;
@@ -19,7 +21,7 @@
     right: 0;
     border-radius: 1px;
     content: "";
-    background: hotpink;
+    background: var(--underline);
     position: absolute;
     bottom: 0;
 }
